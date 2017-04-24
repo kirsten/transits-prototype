@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #FDECE9;
+  color: #353535;
+  font-family: 'utopia-std';
+  padding: 20px;
+}
+
+a {
+  color: #353535;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: .7;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  text-transform: lowercase;
+}
+
+.site-header {
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.menus-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-container {
+  margin-right: 40px;
+}
+
+.menu-prompt {
+  background-color: #FDECE9;
+  border: 2px solid #353535;
+  cursor: pointer;
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: relative;
+  text-transform: lowercase;
+  width: 240px;
+}
+
+.menu-prompt::before {
+  background-color: #353535;
+  color: #FDECE9;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  content: '^';
+  font-size: 21px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 35px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.menu-prompt.placeholder {
+  font-style: italic;
+}
+
+.menu {
+  position: absolute;
+}
+
+.menu li {
+  background-color: #FDECE9;
+  border-bottom: 2px solid #353535;
+  border-right: 2px solid #353535;
+  border-left: 2px solid #353535;
+  cursor: pointer;
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: relative;
+  text-transform: lowercase;
+  width: 240px;
+}
+
+.menu li:hover,
+.menu li.selected {
+  background-color: #aaaaaa;
+}
+
+.meaning-container {
+  max-width: 520px;
+  margin-top: 40px;
+}
+
+.meaning-container h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.hidden {
+  display: none;
+}
